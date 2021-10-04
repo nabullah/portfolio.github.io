@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+:root{
+  --navbar-color:#840032;
+  --aboutme-color:#002642;
+  --work-section-color:#e59500;
+  --contact-color:#100733;
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Navigation-Section */
+
+#navbar{
+    display: flex;
+    background-color: var(--navbar-color);
+    position: sticky;
+    top: 0;
+}
+#navbar-img{
+    max-height: 79px;
+    border-radius: 60px;
+}
+#navbar-li{
+    position: absolute;
+    right: 3px;
+}
+#navbar-li>ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    list-style: none;
+    padding: 5px 0px;
+}
+#navbar-li>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+#navbar-li>ul>li:hover{
+    background-color: rgb(190, 172, 4);
+    transition: 0.5s ease-out;
+    transform: translateX(2);
+}
+
+#navbar-li>ul>li{
+    padding: 15px 45px;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+/* Welcome-Section */
+#welcome-section{  
+    background-color: var(--aboutme-color);
+    display: flow-root;
+    height: 100vh;
+}
+#welcome-box{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 20px;
+    margin: 87px 14px;
+
+    font-family: 'Bonheur Royale', cursive;
+}
+
+#h1-heading{
+    margin: 43px;
+    color: white;
+}
+
+
+/* Project-Section */
+
+#projects{
+text-align: center;
+display: inline-block;
+background-color: var(--work-section-color);
+
+}
+/* #project-grid{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    grid-gap: 52px 19px;
+    border: 2px solid rgb(6, 231, 156);
+    width: 100%;
+ 
+} */
+#project-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-img{
+    height: 215px;
+    width: 473px;
+    margin: auto;
+    display:inline-block;
+}
+.project-tile{
+  
+    flex: 0 0 32%;
+    height: 280px;
+    margin-bottom: 25px;
+}
+
+h1.section-heading{
+    font-size: 2rem;
+    margin: 51px;
+    padding: 26px;
+  
+    font-family: 'Lilita One', cursive;
+    color: white;
+}
+
+.project-title{
+   
+    padding: 10px 11px;
+    margin: 7px;
+    display: block;
+    background-color: #821313;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+}
+.project-title:hover{
+    background-color: rgb(37, 20, 20);
+    transition: 0.5s ease-out;
+    transform: translateX(2)
+}
+.project-tile>p>span.project-title>a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Contact Section */
+#contact{
+    background-color: var(--contact-color);
+}
+
+.contact-heading{
+    font-size: 2rem;
+    text-align: center;
+    padding: 50px;
+   
+    font-family: 'Lilita One', cursive;
+    color: white;
+}
+#sub-heading{
+    padding: 0px;
+}
+.logo-img{
+    height: 54px;
+    background-blend-mode: screen;
+}
+.contact-links>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.contact-links>ul>li{
+    list-style: none;
+    font-size: 2rem;
+}
+.contact-links>ul>li>a{
+    text-decoration: none;
+}
+.contact-span{
+    padding: 21px;
+    position: relative;
+    display: flex;
+    margin: 37px;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-span:hover{
+    background-color: rgb(182, 38, 38);
+    color: white;
+    transition: 0.5s ease-out;
+    transform: translateX(2);
+
+}
+
+
+@media only screen and (max-width:544px){
+#navbar>ul{
+       flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img.project-img{
+width: 400px;
+}
+
+.contact-links>ul{
+    flex-direction: column;
+    }
+  .contact-span{
+    margin: -6px
+  }  
+  #navbar-li>ul>li{
+   padding:0px;
+  }
+}
+
