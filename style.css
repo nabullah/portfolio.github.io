@@ -213,7 +213,7 @@ width: 400px;
   }
 }
 
-.price{
+#price{
     font-size: large;
     margin-top: 23px;
     color: red;
