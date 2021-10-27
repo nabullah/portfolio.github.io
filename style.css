@@ -24,6 +24,7 @@
     background-color: var(--navbar-color);
     position: sticky;
     top: 0;
+    height: 51px;
 }
 #navbar-img{
     max-height: 79px;
@@ -51,8 +52,8 @@
 }
 
 #navbar-li>ul>li{
-    padding: 15px 45px;
-    font-size: 2em;
+    padding: 3px 22px;
+    font-size: 1.5em;
     font-family: 'Lato', sans-serif;
     font-weight: 800;
 }
@@ -212,3 +213,12 @@ width: 400px;
   }
 }
 
+.price{
+    font-size: large;
+    margin-top: 23px;
+    color: red;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
