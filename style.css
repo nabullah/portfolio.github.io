@@ -74,7 +74,7 @@ body{
 }
 #welcome-section::after{
     content: '';
-    background: url("/img/mainbg.png") no-repeat center center/cover;
+    background: url("../img/mainbg.png") no-repeat center center/cover;
     filter: blur(2px);
     height: 769px;
     width: 100%;
